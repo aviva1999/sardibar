@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>חנות סרדיבר | חטיפי חלבון מלוחים</title>
+    <meta
+      name="description"
+      content="חנות סרדיבר: מארזים, חטיפים יחידים ושלושת הטעמים המלוחים מהים."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="shop-page">
+    <div class="snack-cursor" aria-hidden="true">
+      <span class="snack-cursor__dot"></span>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="announcement" aria-label="עדכוני סרדיבר">
+      <div class="announcement__track">
+        <span>★ קרקר חלבון מלוח ★ אומגה 3 ★ חדש על המדף ★</span>
+        <span>★ קרקר חלבון מלוח ★ אומגה 3 ★ חדש על המדף ★</span>
+        <span>★ קרקר חלבון מלוח ★ אומגה 3 ★ חדש על המדף ★</span>
+        <span>★ קרקר חלבון מלוח ★ אומגה 3 ★ חדש על המדף ★</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="סרדיבר דף הבית">
+        <img src="assets/logo .png" alt="סרדיבר" />
+      </a>
+      <nav class="nav" aria-label="ניווט ראשי">
+        <a href="index.html#home">בית</a>
+        <a href="shop.html" aria-current="page">חנות</a>
+        <a href="index.html#flavors">הטעמים שלנו</a>
+        <a href="index.html#story">על המותג</a>
+        <a href="#club">צרו קשר</a>
+      </nav>
+      <button class="cart-button" type="button" aria-label="סל קניות">
+        <span aria-hidden="true">🛍</span>
+        <strong>0</strong>
+      </button>
+    </header>
+
+    <main id="shop-home">
+      <section class="shop-hero scroll-section" aria-labelledby="shop-title">
+        <div class="shop-hero__copy">
+          <p class="shop-kicker">כל המלוחים במקום אחד</p>
+          <h1 id="shop-title">החנות שלנו</h1>
+          <p>יחידים, שלישיות ומארזים חלבון מלוח, צבעוני וקצת לא צפוי.</p>
+          <div class="shop-hero__actions">
+            <a href="#collection" class="button button--yellow">לכל המוצרים</a>
+            <a href="#bundle-shop" class="button button--pink">בנו מארז</a>
+          </div>
+        </div>
+        <div class="shop-hero__visual" aria-hidden="true">
+          <img src="assets/all of theme.png" alt="" />
+          <span class="shop-burst shop-burst--one">חדש</span>
+          <span class="shop-burst shop-burst--two">מלוח</span>
+        </div>
+      </section>
+
+      <section class="shop-toolbar" aria-label="סינון מוצרים">
+        <button class="shop-filter is-active" type="button" data-filter="all">הכל</button>
+        <button class="shop-filter" type="button" data-filter="packs">מארזים</button>
+        <button class="shop-filter" type="button" data-filter="single">יחידים</button>
+        <button class="shop-filter" type="button" data-filter="party">מסיבה</button>
+      </section>
+
+      <section class="shop-collection" id="collection" aria-labelledby="collection-title">
+        <div class="section-heading">
+          <p>לא מתוק. כן ממכר.</p>
+          <h2 id="collection-title">כל המוצרים</h2>
+        </div>
+
+        <div class="shop-layout">
+          <aside class="shop-cart-card" aria-label="סיכום סל">
+            <span>סל מלוח</span>
+            <strong><b class="shop-cart-total">0</b> פריטים</strong>
+            <p>תוסיפו משהו. הים מסתכל.</p>
+            <a href="#bundle-shop" class="button button--cream">למארזים</a>
+          </aside>
+
+          <div class="product-grid shop-product-grid" id="shop-products">
+            <article class="product-card product-card--orange" data-category="packs">
+              <span class="sticker">רב מכר</span>
+              <div class="product-card__image">
+                <img src="assets/figma/product-orange-duo.png" alt="מארז פפריקה סרדיבר" />
+              </div>
+              <p class="product-card__eyebrow">מארז פפריקה סרדיבר</p>
+              <h3>פפריקה מעושנת וצ׳ילי חוצפן</h3>
+              <strong class="price">₪65</strong>
+              <button class="button button--yellow add-to-cart" type="button">הוסיפו לעגלה</button>
+            </article>
+
+            <article class="product-card product-card--green" data-category="packs">
+              <span class="sticker sticker--alt">חדש</span>
+              <div class="product-card__image">
+                <img src="assets/figma/product-yellow-duo.png" alt="מארז לימון סרדיבר" />
+              </div>
+              <p class="product-card__eyebrow">מארז לימון סרדיבר</p>
+              <h3>לימון, זעתר ומלח ים</h3>
+              <strong class="price">₪23</strong>
+              <button class="button button--yellow add-to-cart" type="button">הוסיפו לעגלה</button>
+            </article>
+
+            <article class="product-card product-card--purple" data-category="packs">
+              <span class="sticker">רב מכר</span>
+              <div class="product-card__image">
+                <img src="assets/pack-green.png" alt="מארז כוסברה סרדיבר" />
+              </div>
+              <p class="product-card__eyebrow">מארז כוסברה סרדיבר</p>
+              <h3>שמן זית, שום וכוסברה</h3>
+              <strong class="price">₪23</strong>
+              <button class="button button--yellow add-to-cart" type="button">הוסיפו לעגלה</button>
+            </article>
+
+            <article class="product-card product-card--purple" data-category="packs party">
+              <span class="sticker">הכי נמכר</span>
+              <div class="product-card__image">
+                <img src="assets/figma/product-variety.png" alt="מארז מגוון סרדיבר" />
+              </div>
+              <p class="product-card__eyebrow">מארז מגוון סרדיבר</p>
+              <h3>שלושת הטעמים במארז אחד</h3>
+              <strong class="price">₪23</strong>
+              <button class="button button--yellow add-to-cart" type="button">הוסיפו לעגלה</button>
+            </article>
+
+            <article class="product-card product-card--orange" data-category="single">
+              <span class="sticker sticker--alt">חריף בקטנה</span>
+              <div class="product-card__image">
+                <img class="product-card__bar" src="assets/bar red.png" alt="סרדיבר פפריקה יחיד" />
+              </div>
+              <p class="product-card__eyebrow">סרדיבר פפריקה יחיד</p>
+              <h3>פפריקה מעושנת לדרך</h3>
+              <strong class="price">₪17</strong>
+              <button class="button button--yellow add-to-cart" type="button">הוסיפו לעגלה</button>
+            </article>
+
+            <article class="product-card product-card--yellow" data-category="single">
+              <span class="sticker">חמוץ שמח</span>
+              <div class="product-card__image">
+                <img class="product-card__bar" src="assets/bar yello.png" alt="סרדיבר לימון יחיד" />
+              </div>
+              <p class="product-card__eyebrow">סרדיבר לימון יחיד</p>
+              <h3>לימון וזעתר בלי לעשות עניין</h3>
+              <strong class="price">₪17</strong>
+              <button class="button button--yellow add-to-cart" type="button">הוסיפו לעגלה</button>
+            </article>
+
+            <article class="product-card product-card--green" data-category="single">
+              <span class="sticker sticker--alt">ירוק ומרענן</span>
+              <div class="product-card__image">
+                <img class="product-card__bar" src="assets/bar green.png" alt="סרדיבר כוסברה יחיד" />
+              </div>
+              <p class="product-card__eyebrow">סרדיבר כוסברה יחיד</p>
+              <h3>כוסברה, שום ושמן זית</h3>
+              <strong class="price">₪17</strong>
+              <button class="button button--yellow add-to-cart" type="button">הוסיפו לעגלה</button>
+            </article>
+
+            <article class="product-card product-card--cream" data-category="packs">
+              <span class="sticker">קראנץ׳</span>
+              <div class="product-card__image">
+                <img class="product-card__wide-pack" src="assets/3 bars.png" alt="שלושת חטיפי סרדיבר" />
+              </div>
+              <p class="product-card__eyebrow">שלושת הטעמים שלנו</p>
+              <h3>חטיפי חלבון מלוחים מהים</h3>
+              <strong class="price">₪45</strong>
+              <button class="button button--yellow add-to-cart" type="button">הוסיפו לעגלה</button>
+            </article>
+
+            <article class="product-card product-card--purple" data-category="party packs">
+              <span class="sticker">מסיבה</span>
+              <div class="product-card__image">
+                <img class="product-card__all-theme" src="assets/all of theme.png" alt="כל טעמי סרדיבר" />
+              </div>
+              <p class="product-card__eyebrow">מארז משפחתי סרדיבר</p>
+              <h3>9 חטיפים, שלושה טעמים</h3>
+              <strong class="price">₪110</strong>
+              <button class="button button--yellow add-to-cart" type="button">הוסיפו לעגלה</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-promo scroll-section" id="bundle-shop" aria-labelledby="bundle-shop-title">
+        <div>
+          <p>בחירת הבית</p>
+          <h2 id="bundle-shop-title">בונים סל מלוח</h2>
+          <span>3 טעמים, אפס דרמה, הרבה קראנץ׳.</span>
+        </div>
+        <img src="assets/figma/bundle-family.png" alt="מארז מגוון של סרדיבר" />
+        <a href="index.html#story" class="button button--yellow">למה סרדיבר?</a>
+      </section>
+
+      <section class="club scroll-section" id="club" aria-labelledby="club-title">
+        <h2 id="club-title">הצטרפו למועדון</h2>
+        <p>קבלו עדכונים על הטבות, השקות וקראנץ׳ לפני כולם.</p>
+        <form class="club-form">
+          <button class="button button--pink" type="submit">שלחו</button>
+          <input type="email" name="email" placeholder="כתובת מייל" aria-label="כתובת מייל" />
+        </form>
+        <a href="https://www.instagram.com/sardi_bar/" target="_blank" rel="noreferrer">@sardi_bar</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>סרדיבר</strong>
+        <p>© 2026 Sardibar. All Rights Reserved.</p>
+      </div>
+      <nav aria-label="קישורי תחתית">
+        <a href="#club">צרו קשר</a>
+        <a href="index.html#home">תנאי שימוש</a>
+        <a href="index.html#home">פרטיות</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
